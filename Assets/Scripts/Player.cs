@@ -16,6 +16,13 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void OnJump(InputAction.CallbackContext context){
+        if(context.performed){
+            // Jump logic here
+            Debug.Log("Jump!"); // Placeholder for jump action
+        }
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
